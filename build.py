@@ -5,6 +5,7 @@ from lettersmith import *
 # Update base_url to deployment URL for publishing
 base_url = 'http://localhost:8080'
 site_title = 'My notes'
+site_css = base_url + '/' + 'main.css'
 
 static = files.find('static/**/*')
 
@@ -34,7 +35,8 @@ context = {
     'site': {
         'title': site_title,
     },
-    'base_url': base_url
+    'base_url': base_url,
+    'css'     : site_css   
 }
 
 rendered_docs = pipe(
@@ -42,6 +44,6 @@ rendered_docs = pipe(
     jinjatools.jinja('templates', base_url, context)
 )
 
-write(chain(static, rendered_docs), directory='public')
+write(chain(static, rendered_docs), directory='site')
 
 print('Done!')
