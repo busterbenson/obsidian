@@ -1,5 +1,5 @@
 ---
-title: Homepage
+title: Private notes
 ---
 
 - Run `python3 build.py` to build the site.
