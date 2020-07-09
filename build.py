@@ -4,7 +4,7 @@ from lettersmith import *
 
 # Update base_url to deployment URL for publishing
 base_url = 'http://localhost:8080'
-site_title = 'My notes'
+site_title = 'Obsidian Notes'
 site_css = base_url + '/' + 'main.css'
 
 static = files.find('static/**/*')
@@ -44,6 +44,6 @@ rendered_docs = pipe(
     jinjatools.jinja('templates', base_url, context)
 )
 
-write(chain(static, rendered_docs), directory='site')
+write(chain(static, rendered_docs), directory='public')
 
 print('Done!')
