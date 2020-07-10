@@ -3,7 +3,7 @@ title: Installation Instructions
 date: 2020-07-09
 ---
 
-- Install [Obsidian](https://obsidian.md/). [[index]]
+- Install [Obsidian](https://obsidian.md/). 
 - Install `lettersmith_py` from [here](https://github.com/gordonbrander/lettersmith_py).
 - Download [kev_mcg's starter repo](https://github.com/kmcgillivray/obsidian-lettersmith) to your computer. 
 - Run `cd obsidian-lettersmith`
