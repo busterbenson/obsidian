@@ -12,7 +12,7 @@ date: 2020-07-09
 - Run `cd obsidian-lettersmith`
 - Run `python3 build.py` to build the site.
 - Run `pip freeze > requirements.txt` to create a file that let's Netlify know where to find `letterpress_py`.
-- Run `cat 3.7 > runtime.txt` to let Netlify know to use a modern enough Python version to support lettersmith.
+- Run `echo 3.7 > runtime.txt` to let Netlify know to use a modern enough Python version to support lettersmith.
 - Create a new repo on [Github](https://github.com).
 - Run `git remote add origin https://github.com/user/[your repo name].git` to link your new site to the new Github repo.
 - Go to [Netlify](https://netlify.com) and create an account, then connect [your repo name] Github repo to it.
