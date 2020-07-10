@@ -3,8 +3,8 @@
 from lettersmith import *
 
 # Update base_url to deployment URL for publishing
-base_url = 'https://obsidian-wiki.netlify.app/'
-site_title = 'Obsidian Wiki'
+base_url = 'https://hyoomans.netlify.app/'
+site_title = 'Hyoomans'
 site_css = base_url + '/' + 'main.css'
 
 static = files.find('static/**/*')
